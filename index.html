@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HuoLe · 个人主页</title>
+<meta name="description" content="HuoLe 的个人主页 —— 计算机专业学生，热爱编程与开源，专注后端与云计算方向。" />
+<meta property="og:title" content="HuoLe · 个人主页" />
+<meta property="og:description" content="计算机专业学生，热爱编程与开源，专注后端与云计算方向。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">HuoLe<span class="dot">.</span></a>
+      <div class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">HELLO, WORLD 👋</p>
+        <h1>你好，我是 <span class="grad">HuoLe</span></h1>
+        <p class="lead">
+          一名计算机专业的学生开发者，喜欢把想法写成代码，也喜欢研究服务器与云。
+          这个页面就托管在 <strong>GitHub Pages</strong> 上——没有自己的服务器，也能让全世界访问。
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">看看我的项目</a>
+          <a class="btn ghost" href="https://github.com/HuoLe163" target="_blank" rel="noopener">GitHub 主页</a>
+        </div>
+        <ul class="hero-meta">
+          <li><span class="k">方向</span> 后端开发 / 云计算</li>
+          <li><span class="k">状态</span> 在读 · 寻找实习</li>
+          <li><span class="k">地点</span> 中国 · 郑州</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <div class="card-glow"></div>
+        <div class="terminal">
+          <div class="bar"><i></i><i></i><i></i><span>bash</span></div>
+          <pre><code><span class="c"># 一句话介绍自己</span>
+<span class="p">$</span> whoami
+<span class="o">HuoLe · student developer</span>
+<span class="p">$</span> cat stack.txt
+<span class="o">Python · Java · MySQL · Linux</span>
+<span class="p">$</span> curl -I https://huole163.github.io
+<span class="ok">HTTP/2 200  &lt;-- 这个页面正在运行</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2><span class="num">01</span> 关于我</h2>
+      <div class="about-grid">
+        <p>
+          我是一名计算机相关专业的学生，平时大部分时间在写代码和折腾环境：从数据结构作业，
+          到在 VirtualBox 里装 Linux，再到把一个小网站托管到云上。
+        </p>
+        <p>
+          喜欢“能跑起来”的东西——比起纸面理论，更享受从零把服务部署上线、再用浏览器访问到它的那一刻。
+          目前在系统学习 Linux、网络与后端开发，也在尝试用大模型辅助开发提高效率。
+        </p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>2+</b><span>年编程经历</span></div>
+        <div class="stat"><b>10+</b><span>课程 / 练习项目</span></div>
+        <div class="stat"><b>3</b><span>掌握的语言</span></div>
+        <div class="stat"><b>100%</b><span>开源热爱</span></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2><span class="num">02</span> 技能栈</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>编程语言</h3>
+          <ul><li>Python</li><li>Java</li><li>JavaScript</li><li>C / 数据结构</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>后端与数据库</h3>
+          <ul><li>MySQL</li><li>REST API</li><li>Flask / Spring Boot</li><li>Redis 入门</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>系统与运维</h3>
+          <ul><li>Linux（Debian / Ubuntu）</li><li>Bash 脚本</li><li>VirtualBox 虚拟化</li><li>Nginx 基础</li></ul>
+        </div>
+        <div class="skill-card">
+          <h3>工具与协作</h3>
+          <ul><li>Git / GitHub</li><li>VS Code</li><li>Markdown</li><li>AI 辅助开发</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2><span class="num">03</span> 项目</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="tag">Web · 定位</div>
+          <h3>网页版定位演示 Demo</h3>
+          <p>基于浏览器 Geolocation API 的定位应用，实现了 WGS84 / GCJ-02 / BD-09 坐标换算、轨迹记录与导出。</p>
+          <a href="https://github.com/HuoLe163" target="_blank" rel="noopener">查看代码 →</a>
+        </article>
+        <article class="project">
+          <div class="tag">虚拟化 · Linux</div>
+          <h3>VirtualBox 虚拟机与文件交换</h3>
+          <p>在 VirtualBox 中安装 Debian 13，配置共享文件夹实现宿主机与虚拟机之间的双向文件交换。</p>
+          <a href="https://github.com/HuoLe163" target="_blank" rel="noopener">查看代码 →</a>
+        </article>
+        <article class="project">
+          <div class="tag">云 · 部署</div>
+          <h3>就是本站</h3>
+          <p>纯静态的个人主页，使用 Git 推送到 GitHub，由 GitHub Pages 自动构建发布，无需自建服务器。</p>
+          <a href="#top">回到顶部 →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2><span class="num">04</span> 联系我</h2>
+      <p class="center">想交流技术、组队做项目，或者只是打个招呼，都欢迎 👇</p>
+      <div class="contact-links">
+        <a class="btn primary" href="https://github.com/HuoLe163" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="mailto:hello@example.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 HuoLe · 用 HTML + CSS 手写 · 托管于 GitHub Pages</p>
+    <p class="tiny">本页面为「远程虚拟化 / 云服务平台」课程作业演示站点</p>
+  </footer>
+</body>
+</html>
